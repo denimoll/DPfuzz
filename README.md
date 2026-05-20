@@ -72,6 +72,8 @@ input_example/
 }
 ```
 
+> **Готовые примеры для Zabbix API** — см. [zabbix-api-spec](https://github.com/denimoll/zabbix-api-spec).
+
 ### 2. Настройте конфигурацию
 
 Отредактируйте `config.py`:
@@ -108,13 +110,8 @@ python3 main.py
 
 ## Словарный фаззинг (fuzzdb)
 
-Для включения словарного фаззинга скачайте fuzzdb и укажите путь:
+Словарь атак [fuzzdb](https://github.com/fuzzdb-project/fuzzdb) включён в репозиторий. DPFuzz автоматически использует его из пути:
 
-```bash
-git clone https://github.com/fuzzdb-project/fuzzdb.git
-```
-
-По умолчанию DPFuzz ищет файл атак по пути:
 ```
 fuzzdb/attack/all-attacks/all-attacks-unix.txt
 ```
@@ -172,7 +169,7 @@ DPFuzz автоматически создаёт такие файлы (`for_gen
 
 Любое веб-приложение с JSON RPC 2.0 API, в том числе:
 
-- **Zabbix** — система мониторинга сети
+- **[Zabbix](https://github.com/denimoll/zabbix-api-spec)** — система мониторинга сети (готовые примеры запросов)
 - **Odoo** — ERP-система
 - **Ethereum / Solana** — блокчейн-ноды
 - Любые другие JSON RPC API
@@ -199,7 +196,7 @@ DPFuzz/
 │   ├── test_create_common_jsons.py
 │   ├── test_create_jsons_for_generation.py
 │   └── test_validate_json.py
-└── fuzzdb/                       ← словарь атак (не включён, см. выше)
+└── fuzzdb/                       ← словарь атак (fuzzdb, включён в репо)
 ```
 
 ---
