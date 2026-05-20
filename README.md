@@ -224,6 +224,19 @@ DPFuzz обнаруживает все уязвимые места (Recall = 1.0
 
 ---
 
+## Roadmap
+
+| Feature | Status |
+|---|---|
+| JSON-RPC 2.0 fuzzing | ✅ v1.0 |
+| Parallel requests (ThreadPoolExecutor) | ✅ v1.0 |
+| State save/resume | ✅ v1.0 |
+| Environment variable configuration | ✅ v1.0 |
+| REST API support | 🔜 planned |
+| GraphQL support | 🔜 planned |
+
+---
+
 ## Лицензия
 
 MIT
