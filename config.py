@@ -1,10 +1,32 @@
-"""DPFuzz configuration."""
+"""DPFuzz configuration.
+
+Values are read from CONFIG first, then overridden by environment variables:
+
+  DPFUZZ_URL                    → URL
+  DPFUZZ_PATH_TO_EXAMPLES       → PATH_TO_EXAMPLES
+  DPFUZZ_TOKEN                  → TOKEN
+  DPFUZZ_AUTH_METHOD            → AUTH_METHOD
+  DPFUZZ_MAX_IFACE_REQUEST_COUNT→ MAX_IFACE_REQUEST_COUNT
+  DPFUZZ_MAX_ERROR_COUNT        → MAX_ERROR_COUNT
+  DPFUZZ_MAX_TIME               → MAX_TIME
+  DPFUZZ_ERRORS                 → ERRORS (comma-separated integers)
+  DPFUZZ_SENSITIVE_DATA         → SENSITIVE_DATA (comma-separated strings)
+  DPFUZZ_REPORT_FORMAT          → REPORT_FORMAT
+  DPFUZZ_WORKERS                → WORKERS
+  DPFUZZ_SSH_IP                 → SSH_IP
+  DPFUZZ_SSH_USER               → SSH_USER
+  DPFUZZ_SSH_PASSWORD           → SSH_PASSWORD
+"""
 import glob
+import logging
+import os
 
 import requests
 import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+logger = logging.getLogger(__name__)
 
 CONFIG = {
     # required parameters
@@ -21,6 +43,7 @@ CONFIG = {
     "MAX_TIME": "none",                     # none or seconds as integer
     "ERRORS": [],                           # additional HTTP error codes to treat as errors
     "SENSITIVE_DATA": [],                   # keywords to detect in responses
+    "WORKERS": 4,                           # parallel request threads
 
     # reporting
     "REPORT_FORMAT": "default",  # default (terminal only), txt, json, docx
@@ -30,6 +53,37 @@ CONFIG = {
     "SSH_USER": "root",
     "SSH_PASSWORD": "",
 }
+
+_ENV_MAP = {
+    "DPFUZZ_URL":                     "URL",
+    "DPFUZZ_PATH_TO_EXAMPLES":        "PATH_TO_EXAMPLES",
+    "DPFUZZ_TOKEN":                   "TOKEN",
+    "DPFUZZ_AUTH_METHOD":             "AUTH_METHOD",
+    "DPFUZZ_MAX_IFACE_REQUEST_COUNT": "MAX_IFACE_REQUEST_COUNT",
+    "DPFUZZ_MAX_ERROR_COUNT":         "MAX_ERROR_COUNT",
+    "DPFUZZ_MAX_TIME":                "MAX_TIME",
+    "DPFUZZ_REPORT_FORMAT":           "REPORT_FORMAT",
+    "DPFUZZ_WORKERS":                 "WORKERS",
+    "DPFUZZ_SSH_IP":                  "SSH_IP",
+    "DPFUZZ_SSH_USER":                "SSH_USER",
+    "DPFUZZ_SSH_PASSWORD":            "SSH_PASSWORD",
+}
+
+
+def _apply_env_overrides():
+    for env_key, cfg_key in _ENV_MAP.items():
+        value = os.environ.get(env_key)
+        if value is not None:
+            CONFIG[cfg_key] = value
+    errors_env = os.environ.get("DPFUZZ_ERRORS")
+    if errors_env:
+        CONFIG["ERRORS"] = [v.strip() for v in errors_env.split(",") if v.strip()]
+    sensitive_env = os.environ.get("DPFUZZ_SENSITIVE_DATA")
+    if sensitive_env:
+        CONFIG["SENSITIVE_DATA"] = [v.strip() for v in sensitive_env.split(",") if v.strip()]
+
+
+_apply_env_overrides()
 
 
 def url():
@@ -80,6 +134,10 @@ def report_format():
     return CONFIG.get("REPORT_FORMAT", "default")
 
 
+def workers():
+    return int(CONFIG.get("WORKERS", 4))
+
+
 def ssh_ip():
     return CONFIG.get("SSH_IP")
 
@@ -93,7 +151,7 @@ def ssh_password():
 
 
 def validate_config_parameters():
-    """Validate all config parameters. Returns True on success, prints error and returns None on failure."""
+    """Validate all config parameters. Returns True on success, None on failure."""
     target_url = url()
     if not target_url:
         return _fail("URL parameter is empty")
@@ -133,13 +191,17 @@ def validate_config_parameters():
     if report_format() not in ("default", "txt", "json", "docx"):
         return _fail("REPORT_FORMAT must be one of: default, txt, json, docx")
 
+    if workers() < 1:
+        return _fail("WORKERS must be a positive integer")
+
     return True
 
 
 def _fail(message):
-    print("Config error: %s" % message)
+    logger.error("Config error: %s", message)
     return None
 
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
     validate_config_parameters()

@@ -1,9 +1,12 @@
 """Analyse HTTP responses from the fuzzed API."""
 import json
+import logging
 
 import simplejson
 
 import config
+
+logger = logging.getLogger(__name__)
 
 _JSONRPC_ERROR_RANGE = range(-32768, -31999)  # JSON-RPC reserved error codes
 
@@ -38,7 +41,7 @@ def check_response(req, response):
             json_code = json_error.get("code")
             if isinstance(json_code, int) and json_code in _JSONRPC_ERROR_RANGE:
                 return "json_error", None
-            print("Request: %s\nResponse %s: %s\n" % (req, code, content))
+            logger.warning("Request: %s\nResponse %s: %s", req, code, content)
             return "error", {
                 "reason": "Unknown JSON-RPC error code",
                 "request": req,
@@ -49,7 +52,7 @@ def check_response(req, response):
         pass
 
     if code in errors:
-        print("Request: %s\nResponse %s: %s\n" % (req, code, content))
+        logger.warning("Request: %s\nResponse %s: %s", req, code, content)
         return "error", {
             "reason": "HTTP error code",
             "request": req,
@@ -59,7 +62,7 @@ def check_response(req, response):
 
     for keyword in sensitive:
         if keyword in content_lower:
-            print("Request: %s\nResponse %s: %s\n" % (req, code, content))
+            logger.warning("Request: %s\nResponse %s: %s", req, code, content)
             return "error", {
                 "reason": "Response contains sensitive keyword: %s" % keyword,
                 "request": req,
