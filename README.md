@@ -234,9 +234,3 @@ DPFuzz обнаруживает все уязвимые места (Recall = 1.0
 | Environment variable configuration | ✅ v1.0 |
 | REST API support | 🔜 planned |
 | GraphQL support | 🔜 planned |
-
----
-
-## Лицензия
-
-MIT
