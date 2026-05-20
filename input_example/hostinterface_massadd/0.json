@@ -1,0 +1,24 @@
+{
+           "jsonrpc": "2.0",
+           "method": "hostinterface.massadd",
+           "params": {
+               "hosts": [
+                   {
+                       "hostid": "30050"
+                   },
+                   {
+                       "hostid": "30052"
+                   }
+               ],
+               "interfaces": {
+                   "dns": "",
+                   "ip": "127.0.0.1",
+                   "main": 0,
+                   "port": "10050",
+                   "type": 1,
+                   "useip": 1
+               }
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

@@ -1,0 +1,16 @@
+{
+           "jsonrpc": "2.0",
+           "method": "itemprototype.create",
+           "params": {
+               "name": "Free disk space on {#FSNAME}",
+               "key_": "vfs.fs.size[{#FSNAME},free]",
+               "hostid": "10197",
+               "ruleid": "27665",
+               "type": 0,
+               "value_type": 3,
+               "interfaceid": "112",
+               "delay": "30s"
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

@@ -1,0 +1,12 @@
+{
+           "jsonrpc": "2.0",
+           "method": "hanode.get",
+           "params": {
+               "countOutput": true,
+               "filter": {
+                   "status": 0
+               }
+           },
+           "auth": "3a57200802b24cda67c4e4010b50c065",
+           "id": 1
+       }

@@ -1,0 +1,19 @@
+{
+           "jsonrpc": "2.0",
+           "method": "hostprototype.update",
+           "params": {
+               "hostid": "10092",
+               "tags": [
+                   {
+                       "tag": "Datacenter",
+                       "value": "{#DATACENTER.NAME}"
+                   },
+                   {
+                       "tag": "Instance type",
+                       "value": "{#INSTANCE_TYPE}"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

@@ -1,0 +1,9 @@
+{
+           "jsonrpc": "2.0",
+           "method": "hanode.get",
+           "params": {
+               "ha_nodeids": ["ckuo7i1nw000e0sajwfttc1mp", "ckuo7i1nv000c0sajz85xcrtt"]
+           },
+           "auth": "3a57200802b24cda67c4e4010b50c065",
+           "id": 1
+       }

@@ -1,0 +1,24 @@
+{
+           "jsonrpc": "2.0",
+           "method": "discoveryrule.create",
+           "params": {
+               "name": "Discovery rule with preprocessing",
+               "key_": "lld.with.preprocessing",
+               "hostid": "10001",
+               "ruleid": "27665",
+               "type": 0,
+               "value_type": 3,
+               "delay": "60s",
+               "interfaceid": "1155",
+               "preprocessing": [
+                   {
+                       "type": "20",
+                       "params": "20",
+                       "error_handler": "0",
+                       "error_handler_params": ""
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

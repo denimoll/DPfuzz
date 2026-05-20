@@ -1,0 +1,27 @@
+{
+           "jsonrpc": "2.0",
+           "method": "user.create",
+           "params": {
+               "username": "John",
+               "passwd": "Doe123",
+               "roleid": "5",
+               "usrgrps": [
+                   {
+                       "usrgrpid": "7"
+                   }
+               ],
+               "medias": [
+                   {
+                       "mediatypeid": "1",
+                       "sendto": [
+                           "[email protected]"
+                       ],
+                       "active": 0,
+                       "severity": 63,
+                       "period": "1-7,00:00-24:00"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

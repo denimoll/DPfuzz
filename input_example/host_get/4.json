@@ -1,0 +1,18 @@
+{
+           "jsonrpc": "2.0",
+           "method": "host.get",
+           "params": {
+               "output": ["hostid"],
+               "selectTags": "extend",
+               "evaltype": 0,
+               "tags": [
+                   {
+                       "tag": "Host name",
+                       "value": "Linux server",
+                       "operator": 1
+                   }
+               ]
+           },
+           "auth": "7f9e00124c75e8f25facd5c093f3e9a0",
+           "id": 1
+       }

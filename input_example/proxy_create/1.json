@@ -1,0 +1,24 @@
+{
+           "jsonrpc": "2.0",
+           "method": "proxy.create",
+           "params": {
+               "host": "Passive proxy",
+               "status": "6",
+               "interface": {
+                   "ip": "127.0.0.1",
+                   "dns": "",
+                   "useip": "1",
+                   "port": "10051"
+               },
+               "hosts": [
+                   {
+                       "hostid": "10192"
+                   },
+                   {
+                       "hostid": "10139"
+                   }
+               ]
+           },
+           "auth": "ab9638041ec6922cb14b07982b268f47",
+           "id": 1
+       }

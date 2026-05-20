@@ -1,0 +1,11 @@
+{
+           "jsonrpc": "2.0",
+           "method": "discoveryrule.get",
+           "params": {
+               "output": ["name"],
+               "itemids": "30980",
+               "selectOverrides": ["name", "step", "stop", "filter", "operations"]
+           },
+           "id": 39,
+           "auth": "d678e0b85688ce578ff061bd29a20d3b"
+       }

@@ -1,0 +1,11 @@
+{
+           "jsonrpc": "2.0",
+           "method": "usermacro.create",
+           "params": {
+               "hostid": "10198",
+               "macro": "{$SNMP_COMMUNITY}",
+               "value": "public"
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

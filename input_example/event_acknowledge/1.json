@@ -1,0 +1,12 @@
+{
+           "jsonrpc": "2.0",
+           "method": "event.acknowledge",
+           "params": {
+               "eventids": ["20427", "20428"],
+               "action": 12,
+               "message": "Maintenance required to fix it.",
+               "severity": 4
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

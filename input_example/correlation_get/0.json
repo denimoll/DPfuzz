@@ -1,0 +1,11 @@
+{
+           "jsonrpc": "2.0",
+           "method": "correlation.get",
+           "params": {
+               "output": "extend",
+               "selectOperations": "extend",
+               "selectFilter": "extend"
+           },
+           "auth": "343baad4f88b4106b9b5961e77437688",
+           "id": 1
+       }

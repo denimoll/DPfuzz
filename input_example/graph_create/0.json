@@ -1,0 +1,21 @@
+{
+           "jsonrpc": "2.0",
+           "method": "graph.create",
+           "params": {
+               "name": "MySQL bandwidth",
+               "width": 900,
+               "height": 200,
+               "gitems": [
+                   {
+                       "itemid": "22828",
+                       "color": "00AA00"
+                   },
+                   {
+                       "itemid": "22829",
+                       "color": "3333FF"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

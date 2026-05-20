@@ -1,0 +1,15 @@
+{
+           "jsonrpc": "2.0",
+           "method": "discoveryrule.copy",
+           "params": {
+               "discoveryids": [
+                   "27426"
+               ],
+               "hostids": [
+                   "10196",
+                   "10197"
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

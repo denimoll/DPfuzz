@@ -1,0 +1,24 @@
+{
+           "jsonrpc": "2.0",
+           "method": "hostgroup.massadd",
+           "params": {
+               "groups": [
+                   {
+                       "groupid": "5"
+                   },
+                   {
+                       "groupid": "6"
+                   }
+               ],
+               "hosts": [
+                   {
+                       "hostid": "30050"
+                   },
+                   {
+                       "hostid": "30001"
+                   }
+               ]
+           },
+           "auth": "f223adf833b2bf2ff38574a67bba6372",
+           "id": 1
+       }

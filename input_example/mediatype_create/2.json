@@ -1,0 +1,29 @@
+{
+           "jsonrpc": "2.0",
+           "method": "mediatype.create",
+           "params": {
+               "type": "4",
+               "name": "Webhook",
+               "script": "var Webhook = {\r\n    token: null,\r\n    to: null,\r\n    subject: null,\r\n    message: null,\r\n\r\n    sendMessage: function() {\r\n        // some logic\r\n    }\r\n}",
+               "parameters": [
+                   {
+                       "name": "Message",
+                       "value": "{ALERT.MESSAGE}"
+                   },
+                   {
+                       "name": "Subject",
+                       "value": "{ALERT.SUBJECT}"
+                   },
+                   {
+                       "name": "To",
+                       "value": "{ALERT.SENDTO}"
+                   },
+                   {
+                       "name": "Token",
+                       "value": "<Token>"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

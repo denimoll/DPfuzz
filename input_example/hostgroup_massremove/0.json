@@ -1,0 +1,16 @@
+{
+           "jsonrpc": "2.0",
+           "method": "hostgroup.massremove",
+           "params": {
+               "groupids": [
+                   "5",
+                   "6"
+               ],
+               "hostids": [
+                   "30050",
+                   "30001"
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

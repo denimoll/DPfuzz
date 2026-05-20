@@ -1,0 +1,25 @@
+{
+           "jsonrpc": "2.0",
+           "method": "regexp.update",
+           "params": {
+             "regexpid": "1",
+             "name": "File systems for discovery",
+             "test_string": "",
+             "expressions": [
+               {
+                 "expression": "^(btrfs|ext2|ext3|ext4|reiser|xfs|ffs|ufs|jfs|jfs2|vxfs|hfs|apfs|refs|zfs)$",
+                 "expression_type": "3",
+                 "exp_delimiter": ",",
+                 "case_sensitive": "0"
+               },
+               {
+                 "expression": "^(ntfs|fat32|fat16)$",
+                 "expression_type": "3",
+                 "exp_delimiter": ",",
+                 "case_sensitive": "0"
+               }
+             ]
+           },
+           "auth": "700ca65537074ec963db7efabda78259",
+           "id": 1
+       }

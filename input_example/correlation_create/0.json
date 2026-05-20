@@ -1,0 +1,23 @@
+{
+           "jsonrpc": "2.0",
+           "method": "correlation.create",
+           "params": {
+               "name": "new event tag correlation",
+               "filter": {
+                   "evaltype": 0,
+                   "conditions": [
+                       {
+                           "type": 1,
+                           "tag": "ok"
+                       }
+                   ]
+               },
+               "operations": [
+                   {
+                       "type": 0
+                   }
+               ]
+           },
+           "auth": "343baad4f88b4106b9b5961e77437688",
+           "id": 1
+       }

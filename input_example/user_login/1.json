@@ -1,0 +1,10 @@
+{
+           "jsonrpc": "2.0",
+           "method": "user.login",
+           "params": {
+               "username": "Admin",
+               "password": "zabbix",
+               "userData": true
+           },
+           "id": 1
+       }

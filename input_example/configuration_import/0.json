@@ -1,0 +1,25 @@
+{
+           "jsonrpc": "2.0",
+           "method": "configuration.import",
+           "params": {
+               "format": "xml",
+               "rules": {
+                   "valueMaps": {
+                       "createMissing": true,
+                       "updateExisting": false
+                   },
+                   "hosts": {
+                       "createMissing": true,
+                       "updateExisting": true
+                   },
+                   "items": {
+                       "createMissing": true,
+                       "updateExisting": true,
+                       "deleteMissing": true
+                   }
+               },
+               "source": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<zabbix_export><version>5.4</version><date>2020-03-13T15:31:45Z</date><groups><group><uuid>6f6799aa69e844b4b3918f779f2abf08</uuid><name>Zabbix servers</name></group></groups><hosts><host><host>Export host</host><name>Export host</name><groups><group><name>Zabbix servers</name></group></groups><interfaces><interface><interface_ref>if1</interface_ref></interface></interfaces><items><item><name>Item</name><key>item.key</key><delay>30s</delay><valuemap><name>Host status</name></valuemap><interface_ref>if1</interface_ref><request_method>POST</request_method></item></items><valuemaps><valuemap><name>Host status</name><mappings><mapping><value>0</value><newvalue>Up</newvalue></mapping><mapping><value>2</value><newvalue>Unreachable</newvalue></mapping></mappings></valuemap></valuemaps></host></hosts></zabbix_export>"
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

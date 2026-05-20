@@ -1,0 +1,10 @@
+{
+           "jsonrpc": "2.0",
+           "method": "usergroup.update",
+           "params": {
+               "usrgrpid": "17",
+               "users_status": "1"
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

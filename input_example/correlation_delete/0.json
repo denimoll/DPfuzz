@@ -1,0 +1,10 @@
+{
+           "jsonrpc": "2.0",
+           "method": "correlation.delete",
+           "params": [
+               "1",
+               "2"
+           ],
+           "auth": "343baad4f88b4106b9b5961e77437688",
+           "id": 1
+       }

@@ -1,0 +1,10 @@
+{
+           "jsonrpc": "2.0",
+           "method": "httptest.update",
+           "params": {
+               "httptestid": "5",
+               "status": 0
+           },
+           "auth": "700ca65537074ec963db7efabda78259",
+           "id": 1
+       }

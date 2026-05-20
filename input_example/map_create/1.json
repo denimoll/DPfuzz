@@ -1,0 +1,36 @@
+{
+           "jsonrpc": "2.0",
+           "method": "map.create",
+           "params": {
+               "name": "Host map",
+               "width": 600,
+               "height": 600,
+               "selements": [
+                   {
+                       "selementid": "1",
+                       "elements": [
+                           {"hostid": "1033"}
+                       ],
+                       "elementtype": 0,
+                       "iconid_off": "2"
+                   },
+       
+                   {
+                       "selementid": "2",
+                       "elements": [
+                           {"hostid": "1037"}
+                       ],
+                       "elementtype": 0,
+                       "iconid_off": "2"
+                   }
+               ],
+               "links": [
+                   {
+                       "selementid1": "1",
+                       "selementid2": "2"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

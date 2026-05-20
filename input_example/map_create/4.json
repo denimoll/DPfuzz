@@ -1,0 +1,21 @@
+{
+           "jsonrpc": "2.0",
+           "method": "map.create",
+           "params": {
+               "name": "Host map",
+               "width": 600,
+               "height": 600,
+               "shapes": [
+                   {
+                       "type": 0,
+                       "x": 0,
+                       "y": 0,
+                       "width": 600,
+                       "height": 11,
+                       "text": "{MAP.NAME}"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

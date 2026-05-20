@@ -1,0 +1,12 @@
+{
+           "jsonrpc": "2.0",
+           "method": "housekeeping.update",
+           "params": {
+               "hk_events_mode": "1",
+               "hk_events_trigger": "200d",
+               "hk_events_internal": "2d",
+               "hk_events_discovery": "2d"
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

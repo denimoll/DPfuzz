@@ -1,0 +1,56 @@
+{
+           "jsonrpc": "2.0",
+           "method": "action.create",
+           "params": {
+               "name": "Trigger action",
+               "eventsource": 0,
+               "status": 0,
+               "esc_period": "2m",
+               "filter": {
+                   "evaltype": 3,
+                   "formula": "A and (B or C)",
+                   "conditions": [
+                       {
+                           "conditiontype": 4,
+                           "operator": 5,
+                           "value": "2",
+                           "formulaid": "A"
+                       },
+                       {
+                           "conditiontype": 1,
+                           "operator": 0,
+                           "value": "10084",
+                           "formulaid": "B"
+                       },
+                       {
+                           "conditiontype": 1,
+                           "operator": 0,
+                           "value": "10106",
+                           "formulaid": "C"
+                       }
+                   ]
+               },
+               "operations": [
+                   {
+                       "operationtype": 0,
+                       "esc_period": "0s",
+                       "esc_step_from": 1,
+                       "esc_step_to": 2,
+                       "evaltype": 0,
+                       "opmessage_grp": [
+                           {
+                               "usrgrpid": "7"
+                           }
+                       ],
+                       "opmessage": {
+                           "default_msg": 1,
+                           "mediatypeid": "1"
+                       }
+                   }
+               ],
+               "pause_suppressed": "0",
+               "notify_if_canceled": "0"
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

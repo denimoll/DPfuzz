@@ -1,0 +1,20 @@
+{
+           "jsonrpc": "2.0",
+           "method": "task.create",
+           "params": [
+               {
+                   "type": "6",
+                   "request": {
+                       "itemid": "10092"
+                   }
+               },
+               {
+                   "type": "6",
+                   "request": {
+                       "itemid": "10093"
+                   }
+               }
+           ],
+           "auth": "700ca65537074ec963db7efabda78259",
+           "id": 1
+       }

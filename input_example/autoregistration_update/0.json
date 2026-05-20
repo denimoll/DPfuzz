@@ -1,0 +1,11 @@
+{
+           "jsonrpc": "2.0",
+           "method": "autoregistration.update",
+           "params": {
+               "tls_accept": "3",
+               "tls_psk_identity": "PSK 001",
+               "tls_psk": "11111595725ac58dd977beef14b97461a7c1045b9a1c923453302c5473193478"
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

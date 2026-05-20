@@ -1,0 +1,13 @@
+{
+           "jsonrpc": "2.0",
+           "method": "script.create",
+           "params": {
+               "name": "Reboot server",
+               "command": "reboot server 1",
+               "confirmation": "Are you sure you would like to reboot the server?",
+               "scope": 2,
+               "type": 0
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

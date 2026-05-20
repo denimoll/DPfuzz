@@ -1,0 +1,26 @@
+{
+           "jsonrpc": "2.0",
+           "method": "script.create",
+           "params": {
+               "name": "Webhook script",
+               "command": "try {\n var request = new HttpRequest(),\n response,\n data;\n\n request.addHeader('Content-Type: application/json');\n\n response = request.post('https://localhost/post', value);\n\n try {\n response = JSON.parse(response);\n }\n catch (error) {\n response = null;\n }\n\n if (request.getStatus() !== 200 || !('data' in response)) {\n throw 'Unexpected response.';\n }\n\n data = JSON.stringify(response.data);\n\n Zabbix.Log(3, '[Webhook Script] response data: ' + data);\n\n return data;\n}\ncatch (error) {\n Zabbix.Log(3, '[Webhook Script] script execution failed: ' + error);\n throw 'Execution failed: ' + error + '.';\n}",
+               "type": 5,
+               "timeout": "40s",
+               "parameters": [
+                   {
+                       "name": "token",
+                       "value": "{$WEBHOOK.TOKEN}"
+                   },
+                   {
+                       "name": "host",
+                       "value": "{HOST.HOST}"
+                   },
+                   {
+                       "name": "v",
+                       "value": "2.2"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

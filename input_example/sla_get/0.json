@@ -1,0 +1,13 @@
+{
+           "jsonrpc": "2.0",
+           "method": "sla.get",
+           "params": {
+               "output": "extend",
+               "selectSchedule": ["period_from", "period_to"],
+               "selectExcludedDowntimes": ["name", "period_from", "period_to"],
+               "selectServiceTags": ["tag", "operator", "value"],
+               "preservekeys": true
+           },
+           "auth": "85dd04b94cbfad794616eb923be13c71",
+           "id": 1
+       }

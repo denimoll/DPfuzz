@@ -1,0 +1,16 @@
+{
+           "jsonrpc": "2.0",
+           "method": "service.update",
+           "params": {
+               "serviceid": "4",
+               "times": [
+                   {
+                       "type": "1",
+                       "ts_from": "165600",
+                       "ts_to": "201600"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

@@ -1,0 +1,14 @@
+{
+           "jsonrpc": "2.0",
+           "method": "discoveryrule.create",
+           "params": {
+               "name": "Mounted filesystem discovery",
+               "key_": "vfs.fs.discovery",
+               "hostid": "10197",
+               "type": "0",
+               "interfaceid": "112",
+               "delay": "30s"
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

@@ -1,0 +1,10 @@
+{
+           "jsonrpc": "2.0",
+           "method": "itemprototype.update",
+           "params": {
+               "master_itemid": "25570",
+               "itemid": "189030"
+           },
+           "auth": "700ca65537074ec963db7efabda78259",
+           "id": 1
+       }

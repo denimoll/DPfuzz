@@ -1,0 +1,27 @@
+{
+           "jsonrpc": "2.0",
+           "method": "host.massadd",
+           "params": {
+               "hosts": [
+                   {
+                       "hostid": "10160"
+                   },
+                   {
+                       "hostid": "10167"
+                   }
+               ],
+               "macros": [
+                   {
+                       "macro": "{$TEST1}",
+                       "value": "MACROTEST1"
+                   },
+                   {
+                       "macro": "{$TEST2}",
+                       "value": "MACROTEST2",
+                       "description": "Test description"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

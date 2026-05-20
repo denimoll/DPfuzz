@@ -1,0 +1,13 @@
+{
+           "jsonrpc": "2.0",
+           "method": "discoveryrule.get",
+           "params": {
+               "output": [
+                   "name"
+               ],
+               "selectFilter": "extend",
+               "itemids": ["24681"]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

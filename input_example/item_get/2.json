@@ -1,0 +1,13 @@
+{
+           "jsonrpc": "2.0",
+           "method": "item.get",
+           "params": {
+               "hostids": "10255",
+               "filter": {
+                   "type": "19",
+                   "post_type": "3"
+               }
+           },
+           "id": 3,
+           "auth": "d678e0b85688ce578ff061bd29a20d3b"
+       }

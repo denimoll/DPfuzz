@@ -1,0 +1,18 @@
+{
+           "jsonrpc": "2.0",
+           "method": "template.get",
+           "params": {
+               "output": ["hostid"],
+               "selectTags": "extend",
+               "evaltype": 0,
+               "tags": [
+                   {
+                       "tag": "Host name",
+                       "value": "{HOST.NAME}",
+                       "operator": 1
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

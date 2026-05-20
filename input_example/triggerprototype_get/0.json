@@ -1,0 +1,11 @@
+{
+           "jsonrpc": "2.0",
+           "method": "triggerprototype.get",
+           "params": {
+               "output": "extend",
+               "selectFunctions": "extend",
+               "discoveryids": "22450"
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

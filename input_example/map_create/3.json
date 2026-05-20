@@ -1,0 +1,23 @@
+{
+           "jsonrpc": "2.0",
+           "method": "map.create",
+           "params": {
+               "name": "Map sharing",
+               "width": 600,
+               "height": 600,
+               "users": [
+                   {
+                       "userid": "4",
+                       "permission": "3"
+                   }
+               ],
+               "userGroups": [
+                   {
+                       "usrgrpid": "7",
+                       "permission": "2"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

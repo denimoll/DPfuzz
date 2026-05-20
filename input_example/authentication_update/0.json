@@ -1,0 +1,11 @@
+{
+           "jsonrpc": "2.0",
+           "method": "authentication.update",
+           "params": {
+               "http_auth_enabled": 1,
+               "http_case_sensitive": 0,
+               "http_login_form": 1
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

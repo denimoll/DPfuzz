@@ -1,0 +1,21 @@
+{
+           "jsonrpc": "2.0",
+           "method": "template.massupdate",
+           "params": {
+               "templates": [
+                   {
+                       "templateid": "10085"
+                   },
+                   {
+                       "templateid": "10086"
+                   }
+               ],
+               "templates_clear": [
+                   {
+                       "templateid": "10091"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

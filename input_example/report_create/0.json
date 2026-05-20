@@ -1,0 +1,39 @@
+{
+           "jsonrpc": "2.0",
+           "method": "report.create",
+           "params": {
+               "userid": "1",
+               "name": "Weekly report",
+               "dashboardid": "1",
+               "period": "1",
+               "cycle": "1",
+               "start_time": "43200",
+               "weekdays": "31",
+               "active_since": "2021-04-01",
+               "active_till": "2021-08-31",
+               "subject": "Weekly report",
+               "message": "Report accompanying text",
+               "status": "1",
+               "description": "Report description",
+               "users": [
+                   {
+                       "userid": "1",
+                       "access_userid": "1",
+                       "exclude": "0"
+                   },
+                   {
+                       "userid": "2",
+                       "access_userid": "0",
+                       "exclude": "1"
+                   }
+               ],
+               "user_groups": [
+                   {
+                       "usrgrpid": "7",
+                       "access_userid": "0"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

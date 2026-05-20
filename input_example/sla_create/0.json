@@ -1,0 +1,42 @@
+{
+           "jsonrpc": "2.0",
+           "method": "sla.create",
+           "params": [
+               {
+                   "name": "Database Uptime",
+                   "slo": "99.9995",
+                   "period": "1",
+                   "timezone": "America/Toronto",
+                   "description": "Provide excellent uptime for main database engines.",
+                   "effective_date": 1672444800,
+                   "status": 1,
+                   "schedule": [
+                       {
+                           "period_from": 0,
+                           "period_to": 601200
+                       }
+                   ],
+                   "service_tags": [
+                       {
+                           "tag": "Database",
+                           "operator": "0",
+                           "value": "MySQL"
+                       },
+                       {
+                           "tag": "Database",
+                           "operator": "0",
+                           "value": "PostgreSQL"
+                       }
+                   ],
+                   "excluded_downtimes": [
+                       {
+                           "name": "Software version upgrade rollout",
+                           "period_from": "1648760400",
+                           "period_to": "1648764900"
+                       }
+                   ]
+               }
+           ],
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

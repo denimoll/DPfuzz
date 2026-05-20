@@ -1,0 +1,10 @@
+{
+           "jsonrpc": "2.0",
+           "method": "item.update",
+           "params": {
+               "itemid": "23856",
+               "allow_traps": "1"
+           },
+           "auth": "700ca65537074ec963db7efabda78259",
+           "id": 1
+       }

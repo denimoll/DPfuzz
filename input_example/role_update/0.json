@@ -1,0 +1,19 @@
+{
+           "jsonrpc": "2.0",
+           "method": "role.update",
+           "params": [
+               {
+                   "roleid": "5",
+                   "rules": {
+                       "actions": [
+                           {
+                               "name": "execute_scripts",
+                               "status": "0"
+                           }
+                       ]
+                   }
+               }
+           ],
+           "auth": "3a57200802b24cda67c4e4010b50c065",
+           "id": 1
+       }

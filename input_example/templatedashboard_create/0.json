@@ -1,0 +1,32 @@
+{
+           "jsonrpc": "2.0",
+           "method": "templatedashboard.create",
+           "params": {
+               "templateid": "10318",
+               "name": "Graphs",
+               "pages": [
+                   {
+                       "widgets": [
+                           {
+                               "type": "graph",
+                               "x": 0,
+                               "y": 0,
+                               "width": 12,
+                               "height": 5,
+                               "view_mode": 0,
+                               "fields": [
+                                   {
+                                       "type": 6,
+                                       "name": "graphid",
+                                       "value": "1123"
+                                   }
+                               ]
+                           }
+                       ]
+                       
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

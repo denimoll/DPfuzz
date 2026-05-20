@@ -1,0 +1,11 @@
+{
+           "jsonrpc": "2.0",
+           "method": "valuemap.get",
+           "params": {
+               "output": "extend",
+               "selectMappings": "extend",
+               "valuemapids": ["4"]
+           },
+           "auth": "57562fd409b3b3b9a4d916d45207bbcb",
+           "id": 1
+       }

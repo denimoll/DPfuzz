@@ -1,0 +1,21 @@
+{
+           "jsonrpc": "2.0",
+           "method": "valuemap.update",
+           "params": {
+               "valuemapid": "2",
+               "mappings": [
+                   {
+                       "type": "0",
+                       "value": "0",
+                       "newvalue": "Online"
+                   },
+                   {
+                       "type": "0",
+                       "value": "1",
+                       "newvalue": "Offline"
+                   }
+               ]
+           },
+           "auth": "57562fd409b3b3b9a4d916d45207bbcb",
+           "id": 1
+       }

@@ -1,0 +1,30 @@
+{
+           "jsonrpc": "2.0",
+           "method": "discoveryrule.create",
+           "params": {
+               "hostid": "10257",
+               "interfaceid": "5",
+               "type": "19",
+               "name": "API HTTP agent",
+               "key_": "api_discovery_rule",
+               "value_type": "3",
+               "delay": "5s",
+               "url": "http://127.0.0.1?discoverer.php",
+               "query_fields": [
+                   {
+                       "mode": "json"
+                   },
+                   {
+                       "elements":"2"
+                   }
+               ],
+               "headers": {
+                   "X-Type": "api",
+                   "Authorization": "Bearer mF_A.B5f-2.1JcM"
+               },
+               "allow_traps": "1",
+               "trapper_hosts": "127.0.0.1",
+               "id": 35,
+               "auth": "d678e0b85688ce578ff061bd29a20d3b"
+           }
+       }

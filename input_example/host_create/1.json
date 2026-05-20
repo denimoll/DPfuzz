@@ -1,0 +1,31 @@
+{
+           "jsonrpc": "2.0",
+           "method": "host.create",
+           "params": {
+               "host": "SNMP host",
+               "interfaces": [
+                   {
+                       "type": 2,
+                       "main": 1,
+                       "useip": 1,
+                       "ip": "127.0.0.1",
+                       "dns": "",
+                       "port": "161",
+                       "details": {
+                           "version": 3,
+                           "bulk": 0,
+                           "securityname": "mysecurityname",
+                           "contextname": "",
+                           "securitylevel": 1
+                       }
+                   }
+               ],
+               "groups": [
+                   {
+                       "groupid": "4"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

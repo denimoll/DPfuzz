@@ -1,0 +1,26 @@
+{
+           "jsonrpc": "2.0",
+           "method": "sla.update",
+           "params": [
+               {
+                   "slaid": "5",
+                   "name": "NoSQL Database engines",
+                   "slo": "95",
+                   "period": 2,
+                   "service_tags": [
+                       {
+                           "tag": "Database",
+                           "operator": "0",
+                           "value": "Redis"
+                       },
+                       {
+                           "tag": "Database",
+                           "operator": "0",
+                           "value": "MongoDB"
+                       }
+                   ]
+               }
+           ],
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

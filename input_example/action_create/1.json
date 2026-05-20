@@ -1,0 +1,36 @@
+{
+           "jsonrpc": "2.0",
+           "method": "action.create",
+           "params": {
+               "name": "Discovery action",
+               "eventsource": 1,
+               "status": 0,
+               "filter": {
+                   "evaltype": 0,
+                   "conditions": [
+                       {
+                           "conditiontype": 21,
+                           "operator": 0,
+                           "value": "1"
+                       },
+                       {
+                           "conditiontype": 10,
+                           "operator": 0,
+                           "value": "2"
+                       }
+                   ]
+               },
+               "operations": [
+                   {
+                       "operationtype": 6,
+                       "optemplate": [
+                           {
+                               "templateid": "10091"
+                           }
+                       ]
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

@@ -1,0 +1,15 @@
+{
+           "jsonrpc": "2.0",
+           "method": "itemprototype.update",
+           "params": {
+               "itemid":"28305",
+               "query_fields": [
+                   {
+                       "random": "qwertyuiopasdfghjklzxcvbnm"
+                   }
+               ],
+               "headers": []
+           },
+           "auth": "700ca65537074ec963db7efabda78259",
+           "id": 1
+       }

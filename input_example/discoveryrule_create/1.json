@@ -1,0 +1,38 @@
+{
+           "jsonrpc": "2.0",
+           "method": "discoveryrule.create",
+           "params": {
+               "name": "Filtered LLD rule",
+               "key_": "lld",
+               "hostid": "10116",
+               "type": "0",
+               "interfaceid": "13",
+               "delay": "30s",
+               "filter": {
+                   "evaltype": 1,
+                   "conditions": [
+                       {
+                           "macro": "{#MACRO1}",
+                           "value": "@regex1"
+                       },
+                       {
+                           "macro": "{#MACRO2}",
+                           "value": "@regex2",
+                           "operator": "9"
+                       },
+                       {
+                           "macro": "{#MACRO3}",
+                           "value": "",
+                           "operator": "12"
+                       },
+                       {
+                           "macro": "{#MACRO4}",
+                           "value": "",
+                           "operator": "13"
+                       }
+                   ]
+               }
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

@@ -1,0 +1,10 @@
+{
+           "jsonrpc": "2.0",
+           "method": "drule.update",
+           "params": {
+               "druleid": "6",
+               "iprange": "192.168.2.1-255"
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

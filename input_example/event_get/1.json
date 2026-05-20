@@ -1,0 +1,13 @@
+{
+           "jsonrpc": "2.0",
+           "method": "event.get",
+           "params": {
+               "output": "extend",
+               "time_from": "1349797228",
+               "time_till": "1350661228",
+               "sortfield": ["clock", "eventid"],
+               "sortorder": "desc"
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

@@ -1,0 +1,15 @@
+{
+           "jsonrpc": "2.0",
+           "method": "host.get",
+           "params": {
+               "output": ["hostid"],
+               "selectGroups": "extend",
+               "filter": {
+                   "host": [
+                       "Zabbix server"
+                   ]
+               }
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 2
+       }

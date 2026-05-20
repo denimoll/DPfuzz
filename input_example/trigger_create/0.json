@@ -1,0 +1,36 @@
+{
+           "jsonrpc": "2.0",
+           "method": "trigger.create",
+           "params": [
+               {
+                   "description": "Processor load is too high on {HOST.NAME}",
+                   "expression": "last(/Linux server/system.cpu.load[percpu,avg1])>5",
+                   "dependencies": [
+                       {
+                           "triggerid": "17367"
+                       }
+                   ]
+               },
+               {
+                   "description": "Service status",
+                   "expression": "length(last(/Linux server/log[/var/log/system,Service .* has stopped]))<>0",
+                   "dependencies": [
+                       {
+                           "triggerid": "17368"
+                       }
+                   ],
+                   "tags": [
+                       {
+                           "tag": "service",
+                           "value": "{{ITEM.VALUE}.regsub(\"Service (.*) has stopped\", \"\\1\")}"
+                       },
+                       {
+                           "tag": "error",
+                           "value": ""
+                       }
+                   ]
+               }
+           ],
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

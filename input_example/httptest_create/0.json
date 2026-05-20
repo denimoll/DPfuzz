@@ -1,0 +1,24 @@
+{
+           "jsonrpc": "2.0",
+           "method": "httptest.create",
+           "params": {
+               "name": "Homepage check",
+               "hostid": "10085",
+               "steps": [
+                   {
+                       "name": "Homepage",
+                       "url": "http://example.com",
+                       "status_codes": "200",
+                       "no": 1
+                   },
+                   {
+                       "name": "Homepage / About",
+                       "url": "http://example.com/about",
+                       "status_codes": "200",
+                       "no": 2
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

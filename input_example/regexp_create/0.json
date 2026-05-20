@@ -1,0 +1,17 @@
+{
+           "jsonrpc": "2.0",
+           "method": "regexp.create",
+           "params": {
+             "name": "Storage devices for SNMP discovery",
+             "test_string": "/boot",
+             "expressions": [
+               {
+                 "expression": "^(Physical memory|Virtual memory|Memory buffers|Cached memory|Swap space)$",
+                 "expression_type": "4",
+                 "case_sensitive": "1"
+               }
+             ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

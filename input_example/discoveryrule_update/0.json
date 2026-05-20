@@ -1,0 +1,18 @@
+{
+           "jsonrpc": "2.0",
+           "method": "discoveryrule.update",
+           "params": {
+               "itemid": "22450",
+               "filter": {
+                   "evaltype": 1,
+                   "conditions": [
+                       {
+                           "macro": "{#FSTYPE}",
+                           "value": "@File systems for discovery"
+                       }
+                   ]
+               }
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

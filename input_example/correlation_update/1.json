@@ -1,0 +1,18 @@
+{
+           "jsonrpc": "2.0",
+           "method": "correlation.update",
+           "params": {
+               "correlationid": "1",
+               "filter": {
+                   "conditions": [
+                       {
+                           "type": 3,
+                           "oldtag": "error",
+                           "newtag": "ok"
+                       }
+                   ]
+               }
+           },
+           "auth": "343baad4f88b4106b9b5961e77437688",
+           "id": 1
+       }

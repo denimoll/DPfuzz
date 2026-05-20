@@ -1,0 +1,14 @@
+{
+           "jsonrpc": "2.0",
+           "method": "mediatype.create",
+           "params": {
+               "type": "1",
+               "name": "Push notifications",
+               "exec_path": "push-notification.sh",
+               "exec_params": "{ALERT.SENDTO}\n{ALERT.SUBJECT}\n{ALERT.MESSAGE}\n",
+               "maxattempts": "5",
+               "attempt_interval": "11s"
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

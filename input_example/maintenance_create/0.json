@@ -1,0 +1,36 @@
+{
+           "jsonrpc": "2.0",
+           "method": "maintenance.create",
+           "params": {
+               "name": "Sunday maintenance",
+               "active_since": 1358844540,
+               "active_till": 1390466940,
+               "tags_evaltype": 0,
+               "groups": [
+                   {"groupid": "2"}
+               ],
+               "timeperiods": [
+                   {
+                       "period": 3600,
+                       "timeperiod_type": 3,
+                       "start_time": 64800,
+                       "every": 1,
+                       "dayofweek": 64
+                   }
+               ],
+               "tags": [
+                   {
+                       "tag": "service",
+                       "operator": "0",
+                       "value": "mysqld"
+                   },
+                   {
+                       "tag": "error",
+                       "operator": "2",
+                       "value": ""
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

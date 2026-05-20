@@ -1,0 +1,11 @@
+{
+           "jsonrpc": "2.0",
+           "method": "map.create",
+           "params": {
+               "name": "Map",
+               "width": 600,
+               "height": 600
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

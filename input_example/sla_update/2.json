@@ -1,0 +1,21 @@
+{
+           "jsonrpc": "2.0",
+           "method": "service.update",
+           "params": {
+               "slaid": "5",
+               "excluded_downtimes": [
+                   {
+                       "name": "Software version upgrade rollout",
+                       "period_from": "1648760400",
+                       "period_to": "1648764900"
+                   },
+                   {
+                       "name": "RAM upgrade",
+                       "period_from": "1649192400",
+                       "period_to": "1649206800"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

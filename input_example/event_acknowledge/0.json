@@ -1,0 +1,11 @@
+{
+           "jsonrpc": "2.0",
+           "method": "event.acknowledge",
+           "params": {
+               "eventids": "20427",
+               "action": 6,
+               "message": "Problem resolved."
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

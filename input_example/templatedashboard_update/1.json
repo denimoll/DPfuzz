@@ -1,0 +1,30 @@
+{
+           "jsonrpc": "2.0",
+           "method": "templatedashboard.update",
+           "params": {
+               "dashboardid": "2",
+               "pages": [
+                   {
+                       "dashboard_pageid": 1,
+                       "name": "Renamed Page"
+                   },
+                   {
+                       "dashboard_pageid": 2,
+                       "widgets": [
+                           {
+                               "type": "clock",
+                               "x": 0,
+                               "y": 0,
+                               "width": 4,
+                               "height": 3
+                           }
+                       ]
+                   },
+                   {
+                       "display_period": 60
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

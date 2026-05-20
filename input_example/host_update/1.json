@@ -1,0 +1,17 @@
+{
+           "jsonrpc": "2.0",
+           "method": "host.update",
+           "params": {
+               "hostid": "10126",
+               "templates_clear": [
+                   {
+                       "templateid": "10124"
+                   },
+                   {
+                       "templateid": "10125"
+                   }
+               ]
+           },
+           "auth": "038e1d7b1735c6a5436ee9eae095879e",
+           "id": 1
+       }

@@ -1,0 +1,32 @@
+{
+           "jsonrpc": "2.0",
+           "method": "correlation.create",
+           "params": {
+               "name": "new host group correlation",
+               "description": "a custom description",
+               "status": 0,
+               "filter": {
+                   "evaltype": 3,
+                   "formula": "A or B",
+                   "conditions": [
+                       {
+                           "type": 2,
+                           "operator": 1,
+                           "formulaid": "A"
+                       },
+                       {
+                           "type": 2,
+                           "operator": 1,
+                           "formulaid": "B"
+                       }
+                   ]
+               },
+               "operations": [
+                   {
+                       "type": 1
+                   }
+               ]
+           },
+           "auth": "343baad4f88b4106b9b5961e77437688",
+           "id": 1
+       }

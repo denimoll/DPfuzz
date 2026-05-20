@@ -1,0 +1,13 @@
+{
+           "jsonrpc": "2.0",
+           "method": "discoveryrule.get",
+           "params": {
+               "hostids": "10257",
+               "filter": {
+                   "type": "19",
+                   "url": "http://127.0.0.1/discoverer.php"
+               }
+           },
+           "id": 39,
+           "auth": "d678e0b85688ce578ff061bd29a20d3b"
+       }

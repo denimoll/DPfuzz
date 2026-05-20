@@ -1,0 +1,17 @@
+{
+           "jsonrpc": "2.0",
+           "method": "host.get",
+           "params": {
+               "output": [
+                   "host"
+               ],
+               "selectInventory": [
+                   "os"
+               ],
+               "searchInventory": {
+                   "os": "Linux"
+               }
+           },
+           "id": 2,
+           "auth": "7f9e00124c75e8f25facd5c093f3e9a0"
+       }
