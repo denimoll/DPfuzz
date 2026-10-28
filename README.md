@@ -25,7 +25,7 @@
 
 ## Требования
 
-- Python 3.9+
+- Python 3.10+
 - [Radamsa](https://gitlab.com/akihe/radamsa) — скомпилированный бинарник (необходим для мутационного фаззинга)
 - [fuzzdb](https://github.com/fuzzdb-project/fuzzdb) — опционально, для словарного фаззинга
 
