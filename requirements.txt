@@ -1,6 +1,6 @@
-requests
-urllib3
-paramiko
-simplejson
-docxtpl
+requests>=2.34.2
+urllib3>=2.8.0
+paramiko>=5.1.0
+simplejson>=4.2.0
+docxtpl>=0.20.2
 pyradamsa
